@@ -1,0 +1,54 @@
+.movie-card {
+  position: relative;
+  width: 180px; /* Increased width for better visual */
+  height: 250px; /* Increased height for better visual */
+  padding: 15px;
+  text-align: center;
+  background-color: #333;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and box-shadow effect */
+  box-shadow: 0 0 10px rgba(86, 86, 86, 0.5); /* Increased opacity for glow effect */
+  margin: 10px 0px; /* Added margin to prevent glow effect from being cut off */
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the top */
+}
+
+.movie-card p {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  word-wrap: break-word;
+  margin: 0;
+  z-index: 1; /* Ensure text is on top of background */
+  background-color: rgba(0, 0, 0, 0.6); /* Add semi-transparent dark background */
+  padding: 5px; /* Add padding to the text for better readability */
+  border-radius: 5px; /* Optional: Rounded corners for the background */
+  position: absolute;
+  top: 60%; /* Set the text to be in the upper third of the card */
+  left: 50%;
+  transform: translateX(-50%); /* Center text horizontally */
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Enhanced glow effect on hover */
+}
+
+@media (max-width: 600px) {
+  .movie-card {
+    width: 150px; /* Adjust width for smaller screens */
+    height: 210px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .movie-card {
+    width: 120px; /* Further adjust width for very small screens */
+    height: 180px; /* Further adjust height for very small screens */
+  }
+}
