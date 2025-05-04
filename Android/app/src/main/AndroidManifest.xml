@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Netflix_App4"
+
+        tools:targetApi="31">
+
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Netflix_App4.NoActionBar"/>
+
+        <activity android:name=".view.HomeScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Netflix_App4">
+
+        </activity>
+
+        <activity
+            android:name=".view.MoviePlaybackActivity"
+            android:screenOrientation="landscape">
+        </activity>
+
+
+        <activity
+            android:name=".view.WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Netflix_App4.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".view.RegisterActivity">
+            <!-- אם יש צורך ב-intent filter -->
+        </activity>
+
+        <!-- Main Activity -->
+<!--        <activity android:name=".view.MainActivity" />-->
+
+        <!-- Add MovieDetailsActivity here -->
+        <activity
+            android:name=".view.MovieDetailsActivity"
+            android:theme="@style/Theme.Netflix_App4.NoActionBar"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.SearchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Netflix_App4" />
+
+        <activity
+            android:name=".view.AllCategoriesActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".view.CategoryMoviesActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".view.AdminActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Netflix_App4" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="netflix_red">#E50914</color>
+    <color name="netflix_red_dark">#B30000</color>
+
+    <!-- Material Theme colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Theme Colors -->
+    <color name="primary">@color/netflix_red</color>
+    <color name="primary_dark">@color/netflix_red_dark</color>
+    <color name="accent">@color/netflix_red</color>
+
+    <!-- Light Theme Colors -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_light">#494646</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="text_primary_light">#DE000000</color>
+    <color name="text_primary_dark">#DEFFFFFF</color>
+    <color name="text_secondary_light">#99000000</color>
+    <color name="text_secondary_dark">#99FFFFFF</color>
+
+    <color name="background">@color/background_light</color>
+    <color name="surface">@color/surface_light</color>
+    <color name="text_primary">@color/text_primary_light</color>
+    <color name="text_secondary">@color/text_secondary_light</color>
+
+    <!-- Additional colors -->
+    <color name="dark_gray">#333333</color>
+    <color name="red">#E50914</color>
+    <color name="black_overlay">#1A000000</color>
+    <color name="semi_transparent">#80000000</color>
+    <color name="semi_transparent_black">#99000000</color>
+
+</resources>
